@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LESSON 2</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .vdMARGIN11{
+         border :solid  1px  red;
+         margin-bottom: 50px;
+    }
+    .vdMARGIN12 {
+         border : solid  1px blue;
+    }
+    .vdMARGIN21 {
+        border : dashed 3px green ;
+    }
+    .vdMARGIN22 {
+        border: dashed 3px purple;
+        margin-left: 50px;
+    }
+    .vdPADDING{
+        border: dotted 1px blueviolet;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .vdBoxSizing1{
+        width: 200px;
+        background-color: aqua;
+    }
+    .vdBoxSizing2{
+        width: 200px;
+        padding: 25px;
+        background-color: cadetblue;
+        box-sizing: border-box;
+    }
+    .vdBoxSizing3{
+        width: 200px;
+        padding: 25px;
+        background-color: cadetblue;
+        
+    }
+    .relative {
+        position: relative;
+        left: 250px;
+        border: 3px solid #73AD21;
+        width: 45%;
+        box-sizing: border-box;
+    }
+
+    .relative2 {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid red;
+    } 
+
+    .absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+
+    .testDisInline11{
+        /* display: inline; */
+        width: 100px;
+        height: 20px;
+        border: 2px solid green;
+    }
+    .testDisInline12{
+        display: inline;
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+    }
+
+    .testDisBlock11{
+        /* display: block; */
+        width: 100px;
+        height: 100px;
+        border: 2px solid green;
+    }
+    .testDisBlock12{
+        display: block;
+        width: 100px;
+        height: 30px;
+        border: 2px solid red;
+        box-sizing: border-box;
+    }
+
+    .row{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column{
+        float: left;
+        width: 33,33%;
+        height: 50px ;
+        padding: 50px;
+    }
+    
+
+
+    
+</style>
+
+</head>
+
+<body>
+    <p style="color: RED ;"> <b> LESSON 2</b> </p>
+
+    <h1 id="myID1"; class="myCLASS1">THIS IS HEADING 1 LESSON 2</h1> 
+
+    <p class="vdMARGIN11"> ví dụ margin 1.1 block margin bottom </p>
+    <p class="vdMARGIN12">ví dụ margin 1.2 block </p>
+
+    <span class="vdMARGIN21"> ví dụ margin 2.1 inline</span>
+    <span class="vdMARGIN22"> ví dụ margin 2.2 inline margin left</span>
+
+    <p class="vdPADDING">ví dụ padding; padding top 5%, padding left 10% </p>
+
+    <br>
+    <div class="vdBoxSizing1">đây là ví dụ về box sizing 1</div>
+    <div class="vdBoxSizing2">đây là ví dụ về box sizing 2 đã box sizing</div>
+    <div class="vdBoxSizing3">đây là ví dụ về box sizing 3 chưa box sizing</div>
+
+    <br>
+    <p style="font-size: 30px;"><u><b>POSITION</b></u></p>
+    <p>Position : relative</p>
+    <div class="relative">
+        This div element has position: relative; dùng left right top bottom để đổi vị trí
+    </div>
+<br>
+    <P>Position : absolute</P>
+    <p>An element with position: absolute; is positioned relative to the nearest 
+        positioned ancestor (instead of positioned relative to the viewport, like fixed);
+    nếu không cha dùng như relative</p>
+
+    <div class="relative2">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+ 
+<br>
+    <p style="font-size: 30px;"><u><b>DISPLAY</b></u></p>
+    <p >Display : inline</p>
+    <div class="testDisInline11">test <p class="testDisInline12" >inline</p>test</div>
+<br>
+    <p >Display :block</p>
+    <div class="testDisBlock11">test <p class="testDisBlock12" >block</p>test</div>
+
+<br>
+    <p>LAYOUT</p>
+    <P>layout : float and clear</P>
+    <div class="row">
+        <div class="column" style="background-color: grey;">column 1</div>
+        <div class="column" style="background-color: lightgray;">column 2</div>
+        <div class="column" style="background-color: grey;">column 3</div>
+    </div>
+
+     <br>
+     <P>layout : grid</P>
+     <p>xem vd W3 trong slide</p>
+
+     <P>layout : flexbox</P>
+     <p>xem vd W3 trong slide</p>
+
+    <p>NAVIGATION BAR</p>
+
+    <p>tabs</p>
+
+    <p>icon</p>
+
+</body>
+
+</html>

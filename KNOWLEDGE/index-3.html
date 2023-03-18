@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 3</title>
+</head>
+<body>
+    <p>DATATYPE</p>
+    <P>Datatye : string, number</P>
+    <script>
+        var carName = 'vai luuon';
+        var x1 = 34.0;
+        // alert(x1 + 15);
+
+        // alert(typeof carName); // kieu du lieu cua carName//
+
+        var person = {name:"quy", age:"55"};
+        var personName = person.name;
+        var personAge = person.age;
+
+        // alert(personName);
+        
+        function sayHello (){
+            return"adu adu";
+        }
+        // alert(sayHello);
+        var xinChao = sayHello();
+        // alert(xinChao)
+
+        person.getFullName = function(){
+            return this.name + "ngoc";
+        }
+        var myFullName = person.getFullName();
+        alert(myFullName);
+
+
+    
+    </script>
+<p>xem them ve parseInt, parseFloat, parse cac thu</p>
+<p>xem them ve range errror</p>
+<p>xem them ve doc ready function </p>
+<p>xem them ve concat</p>
+<p>xem them ve scope</p>
+<p>xem them ve DOM event. listener</p>
+<p>xem them ve innerHTML</p>
+<p>xem them ve BOM</p>
+<script src="index-3.js"></script>
+</body>
+</html>
